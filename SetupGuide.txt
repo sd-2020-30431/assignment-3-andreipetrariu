@@ -1,6 +1,6 @@
 This is a guide for setting up the 'Waste less 3' assignment.
 
-1) Run the mysql script file 'wastelessdb_script' to import the database and values.
+1) Run the mysql script file 'wastelessdb_script' to import the database and row values.
 
 2) In Eclipse, go to File -> New -> Project. Go to Web and select 'Dynamic Web Project'.
 
@@ -8,14 +8,14 @@ This is a guide for setting up the 'Waste less 3' assignment.
 
 4) Copy-Paste the src, WebContent folders and the pom.xml file in the project's folder and do a maven update(Right-click
 project -> Maven -> Update Project, check 'Force Update of Snapshots/Releases" and ok. Make sure the src folder is in
-the project source's build path. (Go to the project -> configure build path, in the Source tab.
-(If the java files have errors, mouse over the error and set the java compliance to 1.8)
+the project source's build path. (Go to the project -> configure build path, in the Source tab).
+(If the java files have errors, mouse over the error and set the java compliance to 1.8).
 
-5) Add a server to the project and configure its default port as 8081.(or modify the HttpURLConnection objects in WLClient.java, from "http://localhost:8081" to your server's default port )
+5) Add a server to the project and configure its default port as 8081(or modify the HttpURLConnection objects in WLClient.java, from "http://localhost:8081" to your server's default port ).
 
 6) Run the project on server, then run Main.java from the client package as a java application.
 
- !If the login fails, set the 'status' value of the user you are loggin with(by default 'Andrei98) to 0.
+ !If the login fails, set the 'status' value of the user you are logging with(by default 'Andrei98') to 0.
  !In my version of Waste Less, the reports only keep records of the groceries that have been wasted (haven't 
 been consumed until their expiration date). So, if you consume an item and it doesn't appear on the reports,
 it's OK, this is how I decided to implement the reports.  If you want to test the reports you have to modify the values
