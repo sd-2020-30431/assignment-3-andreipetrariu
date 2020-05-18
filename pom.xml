@@ -7,6 +7,13 @@
 <dependencies>
 
 <dependency>
+    <groupId>org.openjfx</groupId>
+    <artifactId>javafx</artifactId>
+    <version>11</version>
+    <type>pom</type>
+</dependency>
+
+<dependency>
     <groupId>eu.hansolo.enzo</groupId>
     <artifactId>Enzo</artifactId>
     <version>0.3.1</version>
